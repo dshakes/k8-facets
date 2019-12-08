@@ -314,8 +314,14 @@ server:
     create: true
     name: argocd-server
 
-  istiogw:
-    enabled: true
+  istio:
+    enabled: false
+    
+    gateway:
+      enabled: true
+
+    virtualservice:
+      enabled: true
 
   ingress:
     enabled: false

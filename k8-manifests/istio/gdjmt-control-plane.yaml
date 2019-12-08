@@ -5,3 +5,15 @@ metadata:
   name: gdjmt-profile
 spec:
   profile: demo
+  security:
+    components:
+      node_agent:
+        enabled: true
+        k8s:
+          env:
+            - name: "CA_ADDR"
+              value: "istio-citadel:8060"
+            - name: "CA_PROVIDER"
+              value: "Citadel"
+            - name: "VALID_TOKEN"
+              value: "true"

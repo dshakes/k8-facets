@@ -51,7 +51,19 @@ kubectl delete ns istio-system --grace-period=0 --force
 
 ## ArgoCD
 
-TBD
+[Argo CD](https://argoproj.github.io/argo-cd/) is a declarative, GitOps continuous delivery tool for Kubernetes. We are using helm manifests to manage argoCD deployment in `argo-cd` namespace. Following are `helm3` commands to install the same:
+
+#### Install
+
+```bash
+helm install argo-cd argo-cd -n argo-cd
+```
+
+#### Uninstall
+
+```bash
+helm uninstall argo-cd
+```
 
 ## KNative
 

@@ -1,3 +1,5 @@
+{{- if .Values.server.istio.enabled -}}
+{{- if .Values.server.istio.gateway.enabled -}}
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
@@ -15,3 +17,5 @@ spec:
       credentialName: "robocicd-credential" # must be the same as secret
     hosts:
     - "*"
+  {{- end -}}
+  {{- end -}}
