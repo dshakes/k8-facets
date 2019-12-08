@@ -1,5 +1,5 @@
 # k8-facets
-A repo to manage all cluster facets in a separate pipeline. Facets are managed as either a helm manifest or k8 manifest.
+A repo to manage all cluster facets in a separate pipeline. Facets are managed either as helm manifests or k8 manifests.
 
 ## Pipelines
 
