@@ -14,6 +14,16 @@ This section will brief deployment instructions.
 | [KNative](#knative)  | v0.10.0  | k8 - operator |
 | [Kubeflow](#kubeflow)  | 1.3.2  | helm |
 
+## Dashboards
+
+| Name  | http credentials | https credentials |
+| :---         | :---      | :---      |
+| [ArgoCD](http://argocd.robocicd.com)  | admin/argocd  | TBD |
+| [Kiali](http://kiali.robocicd.com:15029)  | admin/admin  | TBD |
+| [Tracing](http://tracing.robocicd.com:15032)  | N/A  | TBD |
+| [Grafana](http://grafana.robocicd.com:15031)  | N/A  | TBD |
+| [Prometheus](http://prometheus.robocicd.com:15030)  | N/A  | TBD |
+
 ## Istio
 
 We use istio operator to install and manage istio components across clusters. Istio [operator](https://istio.io/blog/2019/introducing-istio-operator/) is in `alpha` state but soon they are depracating istio management via helm.
@@ -72,4 +82,5 @@ TBD
 ## Kubeflow
 
 TBD
+
 
